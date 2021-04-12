@@ -24,7 +24,11 @@
 		5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
 		5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
-		D3EDB7832623794F000013B2 /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDB7822623794F000013B2 /* PageOneView.swift */; };
+		D38813E126241DE600F5709F /* Book-Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = D38813E026241DE600F5709F /* Book-Cover.png */; };
+		D3BA4560262490A20099C7EA /* PageOneView copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA455F262490A10099C7EA /* PageOneView copy.swift */; };
+		D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3BA45652624919E0099C7EA /* dream-music.mp3 */; };
+		D3BA456C262496100099C7EA /* MazeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA456B262496100099C7EA /* MazeGameScene.swift */; };
+		D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDB7822623794F000013B2 /* PageTwoView.swift */; };
 		D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +138,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundBook.playgroundbook; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lockdown Learnings.playgroundbook"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
 		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
@@ -163,7 +167,11 @@
 		5EF2F9AB2054BBF300191409 /* libBookCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
-		D3EDB7822623794F000013B2 /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
+		D38813E026241DE600F5709F /* Book-Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-Cover.png"; sourceTree = "<group>"; };
+		D3BA455F262490A10099C7EA /* PageOneView copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageOneView copy.swift"; sourceTree = "<group>"; };
+		D3BA45652624919E0099C7EA /* dream-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dream-music.mp3"; sourceTree = "<group>"; };
+		D3BA456B262496100099C7EA /* MazeGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGameScene.swift; sourceTree = "<group>"; };
+		D3EDB7822623794F000013B2 /* PageTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
 		D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "piano-bg-music.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,7 +211,7 @@
 		5E086DA4204F706E004D8D25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */,
+				5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */,
 				5EF2F9AB2054BBF300191409 /* libBookCore.a */,
 				5E6F7E612368FB6A008CC191 /* libBookAPI.a */,
 				5E6F7E742368FF15008CC191 /* libUserModule.a */,
@@ -312,7 +320,9 @@
 			children = (
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
-				D3EDB7822623794F000013B2 /* PageOneView.swift */,
+				D3BA455F262490A10099C7EA /* PageOneView copy.swift */,
+				D3EDB7822623794F000013B2 /* PageTwoView.swift */,
+				D3BA456B262496100099C7EA /* MazeGameScene.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -383,6 +393,7 @@
 			children = (
 				D3EDB79826237DE4000013B2 /* Music */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
+				D38813E026241DE600F5709F /* Book-Cover.png */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
 				5E551EC42371FC3F00784365 /* Assets.xcassets */,
 			);
@@ -401,6 +412,7 @@
 		D3EDB79826237DE4000013B2 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA45652624919E0099C7EA /* dream-music.mp3 */,
 				D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */,
 			);
 			path = Music;
@@ -426,7 +438,7 @@
 			);
 			name = PlaygroundBook;
 			productName = PlaygroundBook;
-			productReference = 5E086DC02051C5A7004D8D25 /* PlaygroundBook.playgroundbook */;
+			productReference = 5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5E6F7E602368FB6A008CC191 /* BookAPI */ = {
@@ -556,7 +568,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38813E126241DE600F5709F /* Book-Cover.png in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
+				D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */,
 				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
 				D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */,
@@ -621,8 +635,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EDB7832623794F000013B2 /* PageOneView.swift in Sources */,
+				D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
+				D3BA4560262490A20099C7EA /* PageOneView copy.swift in Sources */,
+				D3BA456C262496100099C7EA /* MazeGameScene.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,8 @@
 	<string>ChapterOneName</string>
 	<key>Pages</key>
 	<array>
-		<string>PlaygroundPage.playgroundpage</string>
+		<string>Introduction.playgroundpage</string>
+		<string>SolveTheMaze.playgroundpage</string>
 	</array>
 </dict>
 </plist>
