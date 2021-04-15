@@ -24,10 +24,14 @@
 		5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
 		5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
+		D30535FF2625BB5C00C65C0E /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30535FE2625BB5C00C65C0E /* MazeView.swift */; };
+		D366F5762628446D00BAB078 /* PageThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F5752628446D00BAB078 /* PageThreeView.swift */; };
+		D366F581262849CB00BAB078 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F580262849CB00BAB078 /* GameView.swift */; };
+		D366F58B26284A0700BAB078 /* DiningGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F58A26284A0700BAB078 /* DiningGame.swift */; };
 		D38813E126241DE600F5709F /* Book-Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = D38813E026241DE600F5709F /* Book-Cover.png */; };
-		D3BA4560262490A20099C7EA /* PageOneView copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA455F262490A10099C7EA /* PageOneView copy.swift */; };
+		D39EB64E2626C22900ADCCB8 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EB64D2626C22900ADCCB8 /* Maze.swift */; };
+		D3BA4560262490A20099C7EA /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA455F262490A10099C7EA /* PageOneView.swift */; };
 		D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3BA45652624919E0099C7EA /* dream-music.mp3 */; };
-		D3BA456C262496100099C7EA /* MazeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA456B262496100099C7EA /* MazeGameScene.swift */; };
 		D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDB7822623794F000013B2 /* PageTwoView.swift */; };
 		D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */; };
 /* End PBXBuildFile section */
@@ -167,10 +171,14 @@
 		5EF2F9AB2054BBF300191409 /* libBookCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		D30535FE2625BB5C00C65C0E /* MazeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
+		D366F5752628446D00BAB078 /* PageThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeView.swift; sourceTree = "<group>"; };
+		D366F580262849CB00BAB078 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D366F58A26284A0700BAB078 /* DiningGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningGame.swift; sourceTree = "<group>"; };
 		D38813E026241DE600F5709F /* Book-Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-Cover.png"; sourceTree = "<group>"; };
-		D3BA455F262490A10099C7EA /* PageOneView copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageOneView copy.swift"; sourceTree = "<group>"; };
+		D39EB64D2626C22900ADCCB8 /* Maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		D3BA455F262490A10099C7EA /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
 		D3BA45652624919E0099C7EA /* dream-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dream-music.mp3"; sourceTree = "<group>"; };
-		D3BA456B262496100099C7EA /* MazeGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGameScene.swift; sourceTree = "<group>"; };
 		D3EDB7822623794F000013B2 /* PageTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
 		D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "piano-bg-music.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,11 +326,13 @@
 		5E70679D23678DA00094BDEF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D366F57F262849A900BAB078 /* Page Three Content */,
+				D30536042625BF7C00C65C0E /* Page Two Content */,
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
-				D3BA455F262490A10099C7EA /* PageOneView copy.swift */,
+				D3BA455F262490A10099C7EA /* PageOneView.swift */,
 				D3EDB7822623794F000013B2 /* PageTwoView.swift */,
-				D3BA456B262496100099C7EA /* MazeGameScene.swift */,
+				D366F5752628446D00BAB078 /* PageThreeView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -407,6 +417,24 @@
 				5E6F7E582367B51E008CC191 /* UserModules */,
 			);
 			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		D30536042625BF7C00C65C0E /* Page Two Content */ = {
+			isa = PBXGroup;
+			children = (
+				D30535FE2625BB5C00C65C0E /* MazeView.swift */,
+				D39EB64D2626C22900ADCCB8 /* Maze.swift */,
+			);
+			path = "Page Two Content";
+			sourceTree = "<group>";
+		};
+		D366F57F262849A900BAB078 /* Page Three Content */ = {
+			isa = PBXGroup;
+			children = (
+				D366F580262849CB00BAB078 /* GameView.swift */,
+				D366F58A26284A0700BAB078 /* DiningGame.swift */,
+			);
+			path = "Page Three Content";
 			sourceTree = "<group>";
 		};
 		D3EDB79826237DE4000013B2 /* Music */ = {
@@ -520,7 +548,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					5E086DBF2051C5A7004D8D25 = {
 						CreatedOnToolsVersion = 9.3;
@@ -636,9 +664,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */,
+				D366F58B26284A0700BAB078 /* DiningGame.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
-				D3BA4560262490A20099C7EA /* PageOneView copy.swift in Sources */,
-				D3BA456C262496100099C7EA /* MazeGameScene.swift in Sources */,
+				D39EB64E2626C22900ADCCB8 /* Maze.swift in Sources */,
+				D3BA4560262490A20099C7EA /* PageOneView.swift in Sources */,
+				D30535FF2625BB5C00C65C0E /* MazeView.swift in Sources */,
+				D366F5762628446D00BAB078 /* PageThreeView.swift in Sources */,
+				D366F581262849CB00BAB078 /* GameView.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,8 +752,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
+				DEVELOPMENT_TEAM = 47F65AFS84;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
@@ -735,8 +769,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = "$(PLAYGROUND_BOOK_CONTENT_VERSION)";
+				DEVELOPMENT_TEAM = 47F65AFS84;
 				INSTALL_PATH = /;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
@@ -772,6 +808,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -832,6 +869,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -895,7 +933,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47F65AFS84;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INFOPLIST_FILE = LiveViewTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -922,7 +960,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47F65AFS84;
 				INFOPLIST_FILE = LiveViewTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
