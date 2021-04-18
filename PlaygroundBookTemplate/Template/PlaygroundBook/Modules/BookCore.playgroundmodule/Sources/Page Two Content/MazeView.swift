@@ -279,6 +279,7 @@ public struct MazeView: View {
                 HStack() {
 
                     Text("Visited Nodes: ")
+                        .foregroundColor(.white)
                         .font(.system(size: 20))
                     
                     Text("\(maze.visitedCount)")
