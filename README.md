@@ -23,8 +23,9 @@ Download the project and run the `Duke Preps for WWDC.playgroundbook` file on Sw
 
 ## Screenshots and Demos:
 
+<img src="gif/Page1.gif" width="100%">
 
-
+<img src="gif/Page2.gif" width="100%">
 
 
 
