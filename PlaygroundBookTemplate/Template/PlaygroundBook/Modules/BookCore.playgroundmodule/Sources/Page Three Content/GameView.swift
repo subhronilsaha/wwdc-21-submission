@@ -29,6 +29,10 @@ public struct GameView: View {
                             .resizable()
                             .frame(width: 50, height: 50, alignment: .center)
                     }
+                    
+                    Text("\(game.status[3])")
+                        .foregroundColor(game.statusColor[3])
+                        .fontWeight(.bold)
 
                 }
 
@@ -36,19 +40,26 @@ public struct GameView: View {
                 HStack(spacing: 20) {
 
                     // Left Philosopher
-                    Button (action: {
-                        game.start(player: 2)
-                    }) {
-                        Image("girl")
-                            .resizable()
-                            .frame(width: 50, height: 50, alignment: .center)
+                    VStack {
+                        Button (action: {
+                            game.start(player: 2)
+                        }) {
+                            Image("girl")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .center)
+                        }
+                        Text("\(game.status[2])")
+                            .foregroundColor(game.statusColor[2])
+                            .fontWeight(.bold)
                     }
+                    .frame(width: 100, height: 100, alignment: .center)
 
                     // Dining table
                     ZStack {
-                        Circle()
-                            .fill(Color(UIColor.brown))
+                        Image("table-1")
+                            .resizable()
                             .frame(width: 250, height: 250)
+                        
                         ForEach(0..<4, id: \.self) { i in
                             Image((game.forks[i] == 0) ? "forkEating" : "fork")
                                 .resizable()
@@ -60,67 +71,156 @@ public struct GameView: View {
                     }
                     
                     // Right Philosopher
-                    Button (action: {
-                        game.start(player: 0)
-                    }) {
-                        Image("boy2")
-                            .resizable()
-                            .frame(width: 50, height: 50, alignment: .center)
+                    VStack {
+                        Button (action: {
+                            game.start(player: 0)
+                        }) {
+                            Image("boy2")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .center)
+                        }
+                        Text("\(game.status[0])")
+                            .foregroundColor(game.statusColor[0])
+                            .fontWeight(.bold)
                     }
+                    .frame(width: 100, height: 100, alignment: .center)
 
                 }
 
                 // Down Philosopher
-                Button (action: {
-                    game.start(player: 1)
-                }) {
-                    Image("girl2")
-                        .resizable()
-                        .frame(width: 50, height: 50, alignment: .center)
+                VStack {
+                    Button (action: {
+                        game.start(player: 1)
+                    }) {
+                        Image("girl2")
+                            .resizable()
+                            .frame(width: 50, height: 50, alignment: .center)
+                    }
+                    
+                    Text("\(game.status[1])")
+                        .foregroundColor(game.statusColor[1])
+                        .fontWeight(.bold)
                 }
+            
             }
             
             Spacer()
-                .frame(height: 80)
+                .frame(height: 40)
             
             //
-            VStack {
+            VStack(spacing: 25) {
                 
-                HStack(spacing: 10) {
+                // Semaphore Array
+                HStack(spacing: 20) {
+                    
+                    Text("Binary Semaphore array: ")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                        .frame(width: 100, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                     ForEach(0..<4, id: \.self) { i in
                         ZStack {
                             RoundedRectangle(cornerRadius: 10.0)
-                                .stroke(Color.purple, lineWidth: 5)
-                                .frame(width: 80, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .stroke(Color.orange, lineWidth: 3)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                            if let img = getImage(i: i), img != "" {
-                                Image(img)
-                                    .resizable()
-                                    .frame(width: 40, height: 40, alignment: .center)
-                            } else {
+                            Text("\(game.forks[i])")
+                                .foregroundColor(.white)
+                                .font(.system(size: 30))
+                                .fontWeight(.bold)
+                        
+                             
+                        }
+                    }
+                }
+                
+                // Array of who has it occupied
+                HStack(spacing: 20) {
+                    
+                    Text("Fork users: ")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                        .frame(width: 100, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    ForEach(0..<4, id: \.self) { i in
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(Color.purple, lineWidth: 3)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            if game.occupants[i] == -1 {
                                 Text("-")
-                                    .font(.system(size: 40))
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 30))
                                     .fontWeight(.bold)
+                            } else {
+                                Image(game.imageNames[game.occupants[i]])
+                                    .resizable()
+                                    .frame(width: 30, height: 30, alignment: .center)
+                            }
+                        }
+                    }
+                }
+                
+                // Array of blocked users
+                HStack(spacing: 20) {
+                    
+                    Text("Blocked users: ")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                        .frame(width: 100, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    ForEach(0..<4, id: \.self) { i in
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10.0)
+                                .stroke(Color.pink, lineWidth: 3)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            if i < game.blockedQueue.count {
+                                Image(game.imageNames[game.blockedQueue[i]])
+                                        .resizable()
+                                        .frame(width: 30, height: 30, alignment: .center)
+//                                Text("\(game.blockedQueue[i])")
                             }
                              
                         }
                     }
                 }
-            }
-            
-            Spacer()
-                .frame(height: 80)
-            
-            Button (action: {
-                game.stopPickTimer()
-            }) {
-                ZStack {
-                    Capsule()
-                        .fill(Color.pink)
-                        .frame(width: 130, height: 60, alignment: .center)
-                    Text("INTERRUPT")
-                        .frame(width: 50, height: 50, alignment: .center)
+                
+                
+                HStack {
+                    // DEADLOCK
+                    if game.blockedQueue.count == 4 {
+                        Text("DEADLOCK")
+                            .foregroundColor(Color.pink)
+                            .font(.system(size: 15))
+                            .fontWeight(.bold)
+                        
+                        Button(action: {
+                            game.reset()
+                        }) {
+                            Text("RESET")
+                                .foregroundColor(Color.pink)
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .underline(true, color: Color.pink)
+                        }
+                        
+                        Button(action: {
+                            game.preventDeadlock()
+                        }) {
+                            Text("SOLVE DEADLOCK")
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                                .underline(true, color: Color.pink)
+                        }
+                    }
                 }
+                
             }
         }
     }

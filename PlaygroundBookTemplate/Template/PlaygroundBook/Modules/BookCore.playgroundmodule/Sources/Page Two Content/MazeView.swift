@@ -45,8 +45,8 @@ public struct MazeView: View {
                                         Image("dog")
                                             .resizable()
                                             .frame(width: 40, height: 40, alignment: .center)
-                                    } else if(maze.walls[row][col] == 1) {
-                                        Image("brick")
+                                    } else if(maze.walls[row][col] >= 1) {
+                                        Image(maze.blockerImg[maze.walls[row][col]])
                                             .resizable()
                                             .frame(width: 40, height: 40, alignment: .center)
                                     } else {
@@ -77,7 +77,12 @@ public struct MazeView: View {
                                         Image("dog")
                                             .resizable()
                                             .frame(width: 40, height: 40, alignment: .center)
-                                    } else {
+                                    } else if(maze.finalPath.contains(maze.map[row][col])){
+                                        Circle()
+                                            .foregroundColor(Color.yellow)
+                                            .frame(width: 40, height: 40, alignment: .center)
+                                    }
+                                    else {
                                         Circle()
                                             .foregroundColor(Color.blue)
                                             .frame(width: 40, height: 40, alignment: .center)
@@ -98,6 +103,7 @@ public struct MazeView: View {
                 HStack {
                     
                     Text("Pick a: ")
+                        .foregroundColor(.white)
                         .font(.system(size: 20))
                         .fontWeight(.bold)
                     
@@ -110,8 +116,8 @@ public struct MazeView: View {
                                 .fill(Color.pink)
                                 .frame(width: 100, height: 40, alignment: .center)
                             
-                            Text("Start")
-                                .foregroundColor(Color.white)
+                            Text("Source")
+                                .foregroundColor(.white)
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                         }
@@ -170,6 +176,45 @@ public struct MazeView: View {
                         }
                     }
                     
+                    // AStar Button
+                    Button(action: {
+                        maze.dijkstra()
+                    }) {
+                        ZStack {
+                            Capsule()
+                                .fill(Color(UIColor(red: 0.24, green: 0.70, blue: 0.44, alpha: 1.00)))
+                                .frame(width: 100, height: 40, alignment: .center)
+                            
+                            Text("Dijkstra")
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                        }
+                    }
+                    
+                    // AStar Button
+                    Button(action: {
+                        maze.astar()
+                    }) {
+                        ZStack {
+                            Capsule()
+                                .fill(Color.purple)
+                                .frame(width: 100, height: 40, alignment: .center)
+                            
+                            Text("A-Star")
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 15))
+                                .fontWeight(.bold)
+                        }
+                    }
+                    
+                }
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                HStack {
+                    
                     // STOP TIMER Button
                     Button(action: {
                         maze.stopTimer()
@@ -211,6 +256,7 @@ public struct MazeView: View {
                 
                 HStack {
                     Text("Status: ")
+                        .foregroundColor(.white)
                         .font(.system(size: 20))
                         .fontWeight(.bold)
                     
@@ -223,28 +269,33 @@ public struct MazeView: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("Current Node: \(maze.currentNode)")
-                    .font(.system(size: 20))
-                Text("Coordinates: \(maze.row), \(maze.col)")
+                Text("Current Node: \(maze.currentNode) | Coordinates: (\(maze.row), \(maze.col))")
+                    .foregroundColor(.white)
                     .font(.system(size: 20))
                 
-                Text("Stack for DFS")
-                    .font(.system(size: 20))
-                    .fontWeight(.bold)
-                HStack() {
-                    ForEach(0..<maze.stack.count, id: \.self) { index in
-                        Text("\(maze.stack[index])")
-                    }
-                }
+                Spacer()
+                    .frame(height: 20)
                 
-                Text("Queue for BFS")
-                    .font(.system(size: 20))
-                    .fontWeight(.bold)
                 HStack() {
-                    ForEach(0..<maze.queue.count, id: \.self) { index in
-                        Text("\(maze.queue[index])")
-                    }
+
+                    Text("Visited Nodes: ")
+                        .font(.system(size: 20))
+                    
+                    Text("\(maze.visitedCount)")
+                        .foregroundColor(.green)
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                    
                 }
+
+//                Text("Queue for BFS")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.bold)
+//                HStack() {
+//                    ForEach(0..<maze.queue.count, id: \.self) { index in
+//                        Text("\(maze.queue[index])")
+//                    }
+//                }
             }
             
             Spacer()

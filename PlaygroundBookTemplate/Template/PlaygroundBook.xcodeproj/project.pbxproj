@@ -10,7 +10,6 @@
 		5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */; };
-		5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E551EC42371FC3F00784365 /* Assets.xcassets */; };
 		5E6F7E592367B529008CC191 /* UserModules in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E6F7E582367B51E008CC191 /* UserModules */; };
 		5E6F7E6C2368FC01008CC191 /* BookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F7E5C2367B64A008CC191 /* BookAPI.swift */; };
 		5E6F7E7D2368FF29008CC191 /* SharedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7067A323678E220094BDEF /* SharedCode.swift */; };
@@ -25,10 +24,16 @@
 		5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
 		D30535FF2625BB5C00C65C0E /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30535FE2625BB5C00C65C0E /* MazeView.swift */; };
+		D32204CC262AC91500117997 /* fragile-lofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D32204CB262AC91500117997 /* fragile-lofi.mp3 */; };
+		D32204D2262AED0800117997 /* PageFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32204D1262AED0800117997 /* PageFourView.swift */; };
+		D32204E3262B007C00117997 /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32204E2262B007C00117997 /* AboutMeView.swift */; };
+		D32204F9262B304100117997 /* Book-Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = D32204F8262B304100117997 /* Book-Cover.png */; };
+		D3220514262C1EAC00117997 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3220513262C1EAC00117997 /* IntroView.swift */; };
+		D3220526262C545500117997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3220525262C545500117997 /* Assets.xcassets */; };
+		D322052C262C64ED00117997 /* depth-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D322052B262C64ED00117997 /* depth-music.mp3 */; };
 		D366F5762628446D00BAB078 /* PageThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F5752628446D00BAB078 /* PageThreeView.swift */; };
 		D366F581262849CB00BAB078 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F580262849CB00BAB078 /* GameView.swift */; };
 		D366F58B26284A0700BAB078 /* DiningGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F58A26284A0700BAB078 /* DiningGame.swift */; };
-		D38813E126241DE600F5709F /* Book-Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = D38813E026241DE600F5709F /* Book-Cover.png */; };
 		D39EB64E2626C22900ADCCB8 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EB64D2626C22900ADCCB8 /* Maze.swift */; };
 		D3BA4560262490A20099C7EA /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA455F262490A10099C7EA /* PageOneView.swift */; };
 		D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3BA45652624919E0099C7EA /* dream-music.mp3 */; };
@@ -142,7 +147,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lockdown Learnings.playgroundbook"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E086DC02051C5A7004D8D25 /* Duke Preps for WWDC.playgroundbook */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duke Preps for WWDC.playgroundbook"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E086DC72051DD03004D8D25 /* BookOverridingBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BookOverridingBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E086DCD2051DDB8004D8D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveView.storyboard; sourceTree = "<group>"; };
 		5E086DCF2051DF0F004D8D25 /* Manifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
@@ -151,7 +156,6 @@
 		5E1004BE208E7F6E00BCFE70 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5E2A7AE6204F630600F4E17A /* BaseBuildSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BaseBuildSettings.xcconfig; sourceTree = "<group>"; };
 		5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewSupport.swift; sourceTree = "<group>"; };
-		5E551EC42371FC3F00784365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E6F7E582367B51E008CC191 /* UserModules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserModules; sourceTree = "<group>"; };
 		5E6F7E5C2367B64A008CC191 /* BookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPI.swift; sourceTree = "<group>"; };
 		5E6F7E612368FB6A008CC191 /* libBookAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,10 +176,16 @@
 		5EF2F9AD2054BBF300191409 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
 		D30535FE2625BB5C00C65C0E /* MazeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
+		D32204CB262AC91500117997 /* fragile-lofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fragile-lofi.mp3"; sourceTree = "<group>"; };
+		D32204D1262AED0800117997 /* PageFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageFourView.swift; sourceTree = "<group>"; };
+		D32204E2262B007C00117997 /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
+		D32204F8262B304100117997 /* Book-Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-Cover.png"; sourceTree = "<group>"; };
+		D3220513262C1EAC00117997 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		D3220525262C545500117997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D322052B262C64ED00117997 /* depth-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "depth-music.mp3"; sourceTree = "<group>"; };
 		D366F5752628446D00BAB078 /* PageThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeView.swift; sourceTree = "<group>"; };
 		D366F580262849CB00BAB078 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D366F58A26284A0700BAB078 /* DiningGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningGame.swift; sourceTree = "<group>"; };
-		D38813E026241DE600F5709F /* Book-Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-Cover.png"; sourceTree = "<group>"; };
 		D39EB64D2626C22900ADCCB8 /* Maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
 		D3BA455F262490A10099C7EA /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
 		D3BA45652624919E0099C7EA /* dream-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dream-music.mp3"; sourceTree = "<group>"; };
@@ -219,7 +229,7 @@
 		5E086DA4204F706E004D8D25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */,
+				5E086DC02051C5A7004D8D25 /* Duke Preps for WWDC.playgroundbook */,
 				5EF2F9AB2054BBF300191409 /* libBookCore.a */,
 				5E6F7E612368FB6A008CC191 /* libBookAPI.a */,
 				5E6F7E742368FF15008CC191 /* libUserModule.a */,
@@ -326,6 +336,8 @@
 		5E70679D23678DA00094BDEF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D3220512262C1E9800117997 /* Page One Content */,
+				D32204D7262AFFB700117997 /* Page Four Content */,
 				D366F57F262849A900BAB078 /* Page Three Content */,
 				D30536042625BF7C00C65C0E /* Page Two Content */,
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
@@ -333,6 +345,7 @@
 				D3BA455F262490A10099C7EA /* PageOneView.swift */,
 				D3EDB7822623794F000013B2 /* PageTwoView.swift */,
 				D366F5752628446D00BAB078 /* PageThreeView.swift */,
+				D32204D1262AED0800117997 /* PageFourView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -401,11 +414,11 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				D32204F8262B304100117997 /* Book-Cover.png */,
 				D3EDB79826237DE4000013B2 /* Music */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
-				D38813E026241DE600F5709F /* Book-Cover.png */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
-				5E551EC42371FC3F00784365 /* Assets.xcassets */,
+				D3220525262C545500117997 /* Assets.xcassets */,
 			);
 			path = PrivateResources;
 			sourceTree = "<group>";
@@ -428,6 +441,22 @@
 			path = "Page Two Content";
 			sourceTree = "<group>";
 		};
+		D32204D7262AFFB700117997 /* Page Four Content */ = {
+			isa = PBXGroup;
+			children = (
+				D32204E2262B007C00117997 /* AboutMeView.swift */,
+			);
+			path = "Page Four Content";
+			sourceTree = "<group>";
+		};
+		D3220512262C1E9800117997 /* Page One Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3220513262C1EAC00117997 /* IntroView.swift */,
+			);
+			path = "Page One Content";
+			sourceTree = "<group>";
+		};
 		D366F57F262849A900BAB078 /* Page Three Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +469,8 @@
 		D3EDB79826237DE4000013B2 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				D322052B262C64ED00117997 /* depth-music.mp3 */,
+				D32204CB262AC91500117997 /* fragile-lofi.mp3 */,
 				D3BA45652624919E0099C7EA /* dream-music.mp3 */,
 				D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */,
 			);
@@ -466,7 +497,7 @@
 			);
 			name = PlaygroundBook;
 			productName = PlaygroundBook;
-			productReference = 5E086DC02051C5A7004D8D25 /* Lockdown Learnings.playgroundbook */;
+			productReference = 5E086DC02051C5A7004D8D25 /* Duke Preps for WWDC.playgroundbook */;
 			productType = "com.apple.product-type.bundle";
 		};
 		5E6F7E602368FB6A008CC191 /* BookAPI */ = {
@@ -596,11 +627,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38813E126241DE600F5709F /* Book-Cover.png in Resources */,
+				D322052C262C64ED00117997 /* depth-music.mp3 in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
 				D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */,
-				5E551EC52371FC3F00784365 /* Assets.xcassets in Resources */,
+				D32204CC262AC91500117997 /* fragile-lofi.mp3 in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
+				D3220526262C545500117997 /* Assets.xcassets in Resources */,
+				D32204F9262B304100117997 /* Book-Cover.png in Resources */,
 				D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,11 +696,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32204E3262B007C00117997 /* AboutMeView.swift in Sources */,
 				D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */,
 				D366F58B26284A0700BAB078 /* DiningGame.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
+				D3220514262C1EAC00117997 /* IntroView.swift in Sources */,
 				D39EB64E2626C22900ADCCB8 /* Maze.swift in Sources */,
 				D3BA4560262490A20099C7EA /* PageOneView.swift in Sources */,
+				D32204D2262AED0800117997 /* PageFourView.swift in Sources */,
 				D30535FF2625BB5C00C65C0E /* MazeView.swift in Sources */,
 				D366F5762628446D00BAB078 /* PageThreeView.swift in Sources */,
 				D366F581262849CB00BAB078 /* GameView.swift in Sources */,

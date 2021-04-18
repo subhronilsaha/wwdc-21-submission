@@ -17,43 +17,35 @@ public struct PageOneView: View {
     
     // BODY
     public var body: some View {
+           
+        ZStack {
             
-        VStack {
-            Spacer()
+            // Background
+            Color(UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1.00))
+                .edgesIgnoringSafeArea(.all)
             
-            Image("memoji-dev-guy")
-                .frame(width: 150, height: 150)
-                .animation(.easeInOut, value: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            GeometryReader { geometry in
+                Image("pattern1-1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            }
             
-            Spacer()
-            
-            HStack {
+            // Content
+            VStack {
                 Spacer()
+                IntroView()
+                Spacer()
+                Footer(audioPlayer: $audioPlayer)
                 
-                Text("Play/Pause Music ")
-                
-                Button(action: {
-                    self.audioPlayer.play()
-                }) {
-                    Image(systemName: "play.circle.fill").resizable()
-                        .frame(width: 20, height: 20)
-                        .aspectRatio(contentMode: .fit)
-                }
-                
-                Button(action: {
-                    self.audioPlayer.pause()
-                }) {
-                    Image(systemName: "pause.circle.fill").resizable()
-                        .frame(width: 20, height: 20)
-                        .aspectRatio(contentMode: .fit)
-                }
-            }.padding(10)
+            }
+            .onAppear {
+                let sound = Bundle.main.path(forResource: "depth-music", ofType: "mp3")
+                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                self.audioPlayer.play()
+            }
         }
-        .onAppear {
-            let sound = Bundle.main.path(forResource: "dream-music", ofType: "mp3")
-            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-            self.audioPlayer.play()
-        }
+        
     }
     
     // Empty constructor - Required to avoid crash

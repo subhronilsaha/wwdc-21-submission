@@ -24,9 +24,9 @@ public struct PageThreeView: View {
             
         ZStack {
             // Background
-//            Color.white
-//                .edgesIgnoringSafeArea(.all)
-            
+            Color(UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1.00))
+                .edgesIgnoringSafeArea(.all)
+                        
             // Content
             VStack {
                 Spacer()
@@ -36,9 +36,9 @@ public struct PageThreeView: View {
                 
             }
             .onAppear {
-                let sound = Bundle.main.path(forResource: "piano-bg-music", ofType: "mp3")
+                let sound = Bundle.main.path(forResource: "fragile-lofi", ofType: "mp3")
                 self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-//                self.audioPlayer.play()
+                self.audioPlayer.play()
             }
         }
         
