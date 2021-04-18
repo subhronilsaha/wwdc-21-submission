@@ -1,4 +1,4 @@
-<img src="banner-github.png" width="100%">
+<img src="github-demo/banner-github.png" width="100%">
 
 # Duke's Prep for WWDC :technologist:	
 
@@ -25,13 +25,13 @@ Download the project and run the `Duke Preps for WWDC.playgroundbook` file on Sw
 
 ## Screenshots and Demos:
 
-<img src="Page1.gif" width="100%">
+<img src="github-demo/Page1.gif" width="100%">
 
-<img src="Page2.gif" width="100%">
+<img src="github-demo/Page2.gif" width="100%">
 
-<img src="Page3.gif" width="100%">
+<img src="github-demo/Page3.gif" width="100%">
 
-<img src="Page4.png" width="100%">
+<img src="github-demo/Page4.png" width="100%">
 
 ## Licenses
 
