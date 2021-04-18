@@ -2,13 +2,13 @@
 
 # Duke's Prep for WWDC :technologist:	
 
-My Swift Playground Submission for WWDC 2021 Swift Student Challenge!
+**My Swift Playground Submission for WWDC 2021 Swift Student Challenge!**
 
 **In this Swift Playground, follow Duke the iOS developer's journey as he prepares himself for WWDC 2021 online event, and learns and implements various CS concepts along the way.**
 
 **This Playgroundbook aims to make algorithmic concepts of graph search and OS concepts of Process Synchronisation visual and easy to understand.**
 
-**Youtube Demo: https://www.youtube.com/watch?v=2_ZPL9jPwH8**
+**Youtube Demo: https://www.youtube.com/watch?v=uFCORfnsnzw**
 
 ## Introduction
 
