@@ -31,4 +31,6 @@ Download the project and run the `Duke Preps for WWDC.playgroundbook` file on Sw
 
 <img src="Page4.png" width="100%">
 
+## Licenses
 
+See `LICENSE`
