@@ -27,5 +27,6 @@ Download the project and run the `Duke Preps for WWDC.playgroundbook` file on Sw
 
 <img src="Page2.gif" width="100%">
 
+<img src="Page4.png" width="100%">
 
 
