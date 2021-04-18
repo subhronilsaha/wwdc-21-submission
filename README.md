@@ -2,4 +2,4 @@
 
 My Swift Playground Submission for WWDC 2021 Swift Student Challenge.
 
-<img src="Book-Cover.png" width="100%">
+<img src="banner-github.png" width="100%">
