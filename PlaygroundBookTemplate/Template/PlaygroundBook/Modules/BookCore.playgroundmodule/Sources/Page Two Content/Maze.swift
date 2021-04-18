@@ -105,6 +105,7 @@ class Maze: ObservableObject {
     }
     
     func resetVisited() {
+        stopTimer()
         for i in 0..<max {
             for j in 0..<max {
                 visited[i][j] = 0

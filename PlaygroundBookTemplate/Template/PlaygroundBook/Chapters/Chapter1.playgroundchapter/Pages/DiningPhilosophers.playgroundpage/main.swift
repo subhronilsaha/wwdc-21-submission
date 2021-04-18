@@ -2,7 +2,7 @@
  
 # Hungry Minds 🍽
  
-After all that running, Duke is now super hungry. So he sat down with his 3 friends to eat dinner.
+After all that running around, Duke is now super hungry. So he sat down with his 3 friends to eat dinner.
  
 While eating, they started discussing about all the cool new iOS, macOS, iPadOS, watchOS and tvOS features and updates that could be unveiled at WWDC this year.
  

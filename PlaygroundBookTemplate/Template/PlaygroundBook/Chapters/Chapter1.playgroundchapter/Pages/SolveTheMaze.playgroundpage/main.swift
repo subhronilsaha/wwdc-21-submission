@@ -31,7 +31,14 @@ Search algorithms help you find out the location of certion points in a graph an
  
 Find out which one would find Scooby the fastest!
 
-* Experiment: Tap on the Source and Destination buttons and then select a point on the map to move them around and view different paths! 
+* Experiment: Tap on the Source and Destination buttons and then select a point on the map to move them around.
+\
+\
+Tap on the DFS, BFS, Dijkstra and A-Star buttons to view different paths!
+ 
+Oh, Scooby's missing again! 😱
+ 
+Now that we've found a path to Scooby, it's time for Duke to run and go get him back!
 
 */
 

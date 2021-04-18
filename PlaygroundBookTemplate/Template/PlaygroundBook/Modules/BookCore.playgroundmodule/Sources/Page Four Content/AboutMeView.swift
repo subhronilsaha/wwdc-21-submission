@@ -53,7 +53,7 @@ public struct AboutMeView: View {
                 Spacer()
                     .frame(height: 30)
                 
-                Text("and I hope this book helped you understand Search algorithms and OS Process Synchronisation!")
+                Text("I hope this book helped you understand Search algorithms and OS Process Synchronisation!")
                     .font(.system(size: 20))
                     .multilineTextAlignment(.center)
                 
