@@ -36,9 +36,7 @@
 		D366F58B26284A0700BAB078 /* DiningGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366F58A26284A0700BAB078 /* DiningGame.swift */; };
 		D39EB64E2626C22900ADCCB8 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39EB64D2626C22900ADCCB8 /* Maze.swift */; };
 		D3BA4560262490A20099C7EA /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA455F262490A10099C7EA /* PageOneView.swift */; };
-		D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3BA45652624919E0099C7EA /* dream-music.mp3 */; };
 		D3EDB7832623794F000013B2 /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EDB7822623794F000013B2 /* PageTwoView.swift */; };
-		D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -188,9 +186,7 @@
 		D366F58A26284A0700BAB078 /* DiningGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningGame.swift; sourceTree = "<group>"; };
 		D39EB64D2626C22900ADCCB8 /* Maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
 		D3BA455F262490A10099C7EA /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
-		D3BA45652624919E0099C7EA /* dream-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dream-music.mp3"; sourceTree = "<group>"; };
 		D3EDB7822623794F000013B2 /* PageTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
-		D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "piano-bg-music.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,8 +467,6 @@
 			children = (
 				D322052B262C64ED00117997 /* depth-music.mp3 */,
 				D32204CB262AC91500117997 /* fragile-lofi.mp3 */,
-				D3BA45652624919E0099C7EA /* dream-music.mp3 */,
-				D3EDB79926237DF6000013B2 /* piano-bg-music.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -629,12 +623,10 @@
 			files = (
 				D322052C262C64ED00117997 /* depth-music.mp3 in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
-				D3BA45662624919E0099C7EA /* dream-music.mp3 in Resources */,
 				D32204CC262AC91500117997 /* fragile-lofi.mp3 in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
 				D3220526262C545500117997 /* Assets.xcassets in Resources */,
 				D32204F9262B304100117997 /* Book-Cover.png in Resources */,
-				D3EDB79A26237DF6000013B2 /* piano-bg-music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
