@@ -35,7 +35,7 @@ Download the project and run the `Duke Preps for WWDC.playgroundbook` file on Sw
 
 ## Licenses
 
-See `LICENSE`
+See `License.pdf`
 
 Non-copyright music used:
 1. Fragile by Keys of Moon | https://soundcloud.com/keysofmoon
