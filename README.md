@@ -1,6 +1,8 @@
 <img src="github-demo/banner-github.png" width="100%">
 
-# Duke's Prep for WWDC :technologist:	
+# Duke's Prep for WWDC :technologist: 	
+
+Status: **Accepted** :partying_face:
 
 **My Swift Playground Submission for WWDC 2021 Swift Student Challenge!**
 
